@@ -1,0 +1,35 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="initial-scale=device=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="{% static 'styles/accounts.css' %}">
+	
+</head>
+<body>
+	<div class="rform">
+	<form action="login" method="post">
+		{% csrf_token %}
+		{% for message in messages %}
+			<h5 style="color:red">{{message}}</h5>
+		{% endfor %}
+		
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" placeholder="Username">
+		
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Password">
+		
+		<input type="submit" value="Login">
+		<br>
+		<p>Don't have an account ? <a href="register">Register Here</a></p>
+	</form>
+	</div>
+	<div>
+		
+	</div>
+</body>
+</html>
