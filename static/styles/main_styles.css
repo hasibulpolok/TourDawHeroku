@@ -424,7 +424,7 @@ section
 	left: -100vw;
 	width: 100vw;
 	height: 100vh;
-	background: rgba(242,245,246,0.95);
+	background: #007bff;
 	-webkit-transition: all 1000ms cubic-bezier(.18,.43,.59,.92);
 	-moz-transition: all 1000ms cubic-bezier(.18,.43,.59,.92);
 	-ms-transition: all 1000ms cubic-bezier(.18,.43,.59,.92);

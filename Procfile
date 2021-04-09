@@ -1,1 +1,1 @@
- web: gunicorn dynamic.wsgi
+ web:gunicorn dynamic.wsgi

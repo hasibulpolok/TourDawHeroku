@@ -6,6 +6,9 @@ from django.contrib.auth.models import User,auth
 from django.contrib import messages
 from django.http import HttpResponse
 # Create your views here.
+def contact(request):
+        return render(request,"contact.html")
+        
 def index(request):
     dests = Destination.objects.all()
     phone = Phone_Number.objects.all()
@@ -45,4 +48,5 @@ def index(request):
 
     # dests = [dest1,dest2,dest3]
     return render(request,"index.html",{'dests':dests,'phone':phone,'nsl':nsl})
+    
     

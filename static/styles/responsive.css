@@ -111,6 +111,9 @@
 
 @media only screen and (max-width: 991px)
 {
+	.menu{
+		background-color: red;
+	}
 	.main_nav,
 	.header_phone
 	{
